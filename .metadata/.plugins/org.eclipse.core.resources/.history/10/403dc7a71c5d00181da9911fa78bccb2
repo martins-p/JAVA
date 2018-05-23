@@ -1,0 +1,19 @@
+
+public class Quick_Maths {
+
+	public static void main(String[] args) {
+
+		//int c = a + b;
+		int a = 8;
+		int b = 81;
+		double c = a/(double)b;
+
+		double e = 8.0;
+		double d = b/e;
+
+		System.out.println("a/b = " + c);
+		System.out.println("b/e  = " + d);
+		
+	}
+
+}

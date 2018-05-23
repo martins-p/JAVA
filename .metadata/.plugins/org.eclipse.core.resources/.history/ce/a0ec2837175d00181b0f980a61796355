@@ -1,0 +1,33 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		String vards = "Vafele";
+		int skaits = 55;
+		System.out.print(vards);
+		String[] Masivs = {"admins", "vafele", "52"};
+		System.out.println(Masivs[2]);
+		
+		//primitive
+		int i = 1_000_000;
+		double d = 1.0;
+		float f = 2.0f;
+		long l = 5_000_000_000l;
+		char c = 'u'; //Single quotes izmanto vienam simbolam
+		
+		//objects
+		
+		int[] ai = { 1,2,3,4};
+		int[] aiSize = new int[6]; //tukss masivs ar 6 vietam
+		int[] aiEmpty = {};
+		
+		System.out.print(skaits + i);
+		for (int z = 0; z < 10; z++) {
+			System.out.println(z);
+		}
+		System.out.println("Ievadi skaitli: ");
+		
+	}
+
+}

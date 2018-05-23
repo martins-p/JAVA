@@ -1,0 +1,10 @@
+
+public class Greetings {
+
+	public static void main(String[] args) {
+		String vards = "Martins";
+		int vecums = 28;
+		System.out.println(String.format("Sveiki, mani sauc {0}, esmu {1} gadus jauns.", vards, vecums));
+	}
+
+}

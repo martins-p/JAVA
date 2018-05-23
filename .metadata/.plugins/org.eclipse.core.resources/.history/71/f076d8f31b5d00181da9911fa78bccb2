@@ -1,0 +1,18 @@
+
+public class Quick_Maths {
+
+	public static void main(String[] args) {
+
+		//int c = a + b;
+		int a = 5;
+		int b = 10;
+		int c = a + b;
+		int d = a * a;
+		int x = b % a;
+		System.out.println("a+b = " + c);
+		System.out.println("a kvadrata = " + d);
+		System.out.println("b/a atlikums = " + x);
+		
+	}
+
+}

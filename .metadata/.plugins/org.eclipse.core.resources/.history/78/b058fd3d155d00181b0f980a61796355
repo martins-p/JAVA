@@ -1,0 +1,19 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		String vards = "Vafele";
+		int skaits = 55;
+		System.out.print(vards);
+		String[] Masivs = {"admins", "vafele", "52"};
+		System.out.println(Masivs[2]);
+		int i = 1_000_000;
+		System.out.print(skaits + i);
+		for (int z = 0; z < 10; z++) {
+			System.out.println(z);
+		}
+		
+	}
+
+}

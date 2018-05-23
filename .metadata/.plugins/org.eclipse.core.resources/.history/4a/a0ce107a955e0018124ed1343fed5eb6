@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class BasicMath {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Ludzu, ievadi veselu skaitli: ");
+		int a = scanner.nextInt();
+		System.out.print("Ludzu, ievadi decimalskaitli (ar komatu): ");
+		double b = scanner.nextDouble();
+		System.out.printf("Skaitlu %d un %f summa ir %d", a, b, (double)a+b);
+
+	}
+
+}

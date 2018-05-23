@@ -1,0 +1,16 @@
+
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+		String vards = "Vafele";
+		int skaits = 55;
+		System.out.print(vards);
+		String[] Masivs = {"admins", "vafele", "52"};
+		System.out.print(Masivs[2]);
+		int i = 0;
+		System.out.print(skaits + i);
+		
+	}
+
+}

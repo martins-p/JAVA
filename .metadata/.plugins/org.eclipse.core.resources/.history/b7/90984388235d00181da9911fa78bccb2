@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ReadLine {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Ievadi veselu skaitli: ");
+		int ievade = 0;
+		
+		System.out.println();
+	}
+
+}
