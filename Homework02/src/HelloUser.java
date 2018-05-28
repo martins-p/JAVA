@@ -13,9 +13,8 @@ public class HelloUser {
 			input = input.substring(1);
 		}
 		
-		int spaceIndex = input.indexOf(space);
-
 		if (input.contains(" ")) { // Pārbauda, vai ir ievadīti vidmaz divi vārdi ar atstarpi starp tiem
+			int spaceIndex = input.indexOf(space);
 			String name = input.substring(0, spaceIndex); // Iegūst vārdu no ievades
 			String lastName = input.substring(spaceIndex + 1, input.length()); // Iegūst uzvārdu no ievades
 

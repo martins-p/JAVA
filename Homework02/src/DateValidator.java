@@ -4,7 +4,7 @@ public class DateValidator {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		String[] monthArray = { "janvaris", "februaris", "marts", "aprilis", "maijs", "junijs", "julijs", "augusts",
+		String[] monthArray = { "janvāris", "februāris", "marts", "aprīlis", "maijs", "jūnijs", "jūlijs", "augusts",
 				"septembris", "oktobris", "novembris", "decembris" };		//Menesu masivs
 		int[] dateArray = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };	//Datumu masivs
 		System.out.print("Ludzu ievadi dienu (dd):");
