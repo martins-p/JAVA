@@ -15,7 +15,7 @@ public class DateValidator {
 		int year = scan.nextInt();
 		scan.close();
 
-		if (year % 4 == 0) {	//Izmaina februara dienu skaitu, ja ir isais gads
+		if (year % 4 == 0) {	//Izmaina februara dienu skaitu, ja ir garais gads
 			dateArray[1] = 29;
 		} else {
 			dateArray[1] = 28;	//Pievienots, lai butu pareiza vertiba, ja programmu parveido par ciklu un masivs tiek izmantots atkartoti

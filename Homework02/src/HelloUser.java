@@ -4,27 +4,29 @@ public class HelloUser {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Ludzu ievadi savu vardu un uzvardu:");
+		System.out.print("Ievadi savu vārdu un uzvārdu:");
 		String input = scan.nextLine(); // Saglabā visu lietotāja ievadi
 		scan.close();
+		char space = ' ';
 
-		while (input.indexOf(' ') == 0) { // Pa vienai nodzēš vārda sākumā ievadītas atstarpes
+		while (input.indexOf(space) == 0) { // Pa vienai nodzēš vārda sākumā ievadītas atstarpes
 			input = input.substring(1);
 		}
+		
+		int spaceIndex = input.indexOf(space);
 
 		if (input.contains(" ")) { // Pārbauda, vai ir ievadīti vidmaz divi vārdi ar atstarpi starp tiem
-			String name = input.substring(0, input.indexOf(' ')); // Iegūst vārdu no ievades
-			String lastName = input.substring(input.indexOf(' ') + 1, input.length()); // Iegūst uzvārdu no ievades
+			String name = input.substring(0, spaceIndex); // Iegūst vārdu no ievades
+			String lastName = input.substring(spaceIndex + 1, input.length()); // Iegūst uzvārdu no ievades
 
 			name = (name.toUpperCase().charAt(0)) + name.substring(1, name.length()); // Pārveido vārdu, lai sākas ar
 																						// lielo burtu
 			lastName = lastName.toUpperCase(); // Pārveido uzvārdu, lai viss ir ar lielajiem burtiem
 
-			System.out.println("'" + name + "'");
-			System.out.println("'" + lastName + "'");
+			System.out.printf("'%s'\n", name);
+			System.out.printf("'%s'\n", lastName); 
 		} else {
-			System.out.println("Ievaditais vards nav atpazits.");
+			System.out.println("Ievadītais vārds nav atpazīts.");
 		}
 	}
-
 }
