@@ -21,7 +21,7 @@ public class DateValidator {
 			dateArray[1] = 28;	//Pievienots, lai butu pareiza vertiba, ja programmu parveido par ciklu un masivs tiek izmantots atkartoti
 		}
 
-		if (day < 0 || day > 31 || month > 12 || month < 1 || year < 1 || dateArray[month - 1] < day) { //Dienas, menesa un gada vertibu parbaude
+		if (day < 1 || day > 31 || month > 12 || month < 1 || year < 1 || dateArray[month - 1] < day) { //Dienas, menesa un gada vertibu parbaude
 			System.out.println("Datums nav pareizs.");
 		} else {
 			System.out.printf("%d. gada %d. %s\n", year, day, monthArray[month - 1]);
