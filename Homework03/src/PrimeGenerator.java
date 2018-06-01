@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class PrimeGenerator {
@@ -12,8 +11,9 @@ public class PrimeGenerator {
 			count = scan.nextInt();
 		}
 		scan.close();
-		int printed = 0; // Izvadito skaitlu skaits
-		int number = 0; // Skaitlis, kurs tiks parbaudits, via tas ir pirmskaitlis
+		
+		int printed = 0; // Faktiski izvadito skaitlu skaits
+		int number = 0; // Skaitlis, kurs tiks parbaudits, vai tas ir pirmskaitlis
 		while (printed < count) { // Cikls darbojas, kamer nav izvadits lietotaja noraditais pirmskaitlu skaits
 			number++; // Palielina parbaudamo skaitli par 1
 			boolean prime = true;

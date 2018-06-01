@@ -21,17 +21,17 @@ public class SortArray {
 		int[] arr = new int[length]; //Izveido masivu ar ievadito garumu
 		
 		for (int i = 0; i < length; i++) { //Piepilda masivu ar random vertibam
-			int number = 0;
-			while (number < 10) { //Genere random skaitlus kas ir > 10
-				number = rand.nextInt(100);
-			}
-			arr[i] = number;
+//			int number = 0;
+//			while (number < 10) { //Genere random skaitlus kas ir > 10
+//				number = rand.nextInt(100);
+//			}
+			arr[i] = rand.nextInt(90) + 10;
 		}
 		System.out.println("Originalais masivs: " + Arrays.toString(arr));
 
 		boolean swap = true; // Bubble sort metode - parvieto lielakas vertibas uz beigam
 		int j = 0; 
-		int temp; //Integer vertibu samainisanai
+		int temp; //Integer mainigais vertibu samainisanai
 		while (swap) {
 			swap = false; //Boolean, lai parbauditu, vai masivs jau nav sakartots
 			j++; //Skaititajs, lai katru reizi cikls neiet cauri pilnigi visam masivam, jo beigas jau bus sakartotas
